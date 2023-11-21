@@ -1,0 +1,127 @@
+[[Metatensor]]
+arch = "aarch64"
+git-tree-sha1 = "5b17a9f4879f58f419fd6467efe15cd9d6661204"
+os = "macos"
+
+    [[Metatensor.download]]
+    sha256 = "85f4aa627da4c7a1a28526ffa163cc3feda99dc0ce5638e5941cbc6cf2e10d9b"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.aarch64-apple-darwin.tar.gz"
+[[Metatensor]]
+arch = "aarch64"
+git-tree-sha1 = "71ee2932c2489786aa168e2bfd2b617d9d0d3614"
+libc = "glibc"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "ce5717f7922c9265d2f5fc41ccc4b81e96e7ace9eed7984c58d002b277ddc224"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.aarch64-linux-gnu.tar.gz"
+[[Metatensor]]
+arch = "aarch64"
+git-tree-sha1 = "f4ee2105adfae558d7def09447ea7f490d065855"
+libc = "musl"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "6eac49d6c120f4264ee4b8058f6772665f0c07a43e2ba69206b720ecee4b2998"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.aarch64-linux-musl.tar.gz"
+[[Metatensor]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "37a07a90edef457f812cdb06e37c38b75691f2e8"
+libc = "glibc"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "eed8ca5ee521848173a6f3eb533cf6f6dfe6db5f0c2bf50c2887e4157df1faf2"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.armv6l-linux-gnueabihf.tar.gz"
+[[Metatensor]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "bea1b90f3de9d88cc476e929ef586df116374b09"
+libc = "musl"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "b526ff49beaf70cfab6141ba39e7d09a3500a006cc11315dd0814419db174f75"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.armv6l-linux-musleabihf.tar.gz"
+[[Metatensor]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "d89916429816a2fca2a1d05b5d1727cbf8a5e3ab"
+libc = "glibc"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "7ca27ed82f886027991896d32f127040190297ce235437e48a532afcd649e977"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.armv7l-linux-gnueabihf.tar.gz"
+[[Metatensor]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "92bce936f3a1885c99277c1abe442cf52aa279b2"
+libc = "musl"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "cb18256de9a0d673cc3e5c52baeb305e6121dc00d37b08f5d9c12fae093dc9f5"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.armv7l-linux-musleabihf.tar.gz"
+[[Metatensor]]
+arch = "i686"
+git-tree-sha1 = "566310328c0feb00bb7cbaff68b2d9432aab23d4"
+libc = "glibc"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "49a0cf6cd2a65f44c00b8156f8ef65138d20a976785c0d24dc5a01c75eaeef11"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.i686-linux-gnu.tar.gz"
+[[Metatensor]]
+arch = "i686"
+git-tree-sha1 = "7554fe87d851f6b5cc440fce0b597ba6f6cd7ad1"
+libc = "musl"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "3a26da79eb6d8dd986876c5b361fd143646b66b0cf25116ce0329ccfcacb533e"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.i686-linux-musl.tar.gz"
+[[Metatensor]]
+arch = "powerpc64le"
+git-tree-sha1 = "5d35cbf98f3382dceb18552c21095815a67e48fa"
+libc = "glibc"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "606c1cee6697c070e4eff1361d16c74a88acf80dd827c57b6b662f4a9e593130"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.powerpc64le-linux-gnu.tar.gz"
+[[Metatensor]]
+arch = "x86_64"
+git-tree-sha1 = "563045522c0083e31a3c743d539db64a408ac7e0"
+os = "macos"
+
+    [[Metatensor.download]]
+    sha256 = "45ea30f267a0722b589bb6effdf0fe4ba87a4f2c98fc15e309ab5c544c9f33e0"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.x86_64-apple-darwin.tar.gz"
+[[Metatensor]]
+arch = "x86_64"
+git-tree-sha1 = "b5c03bdb42af7f9dfe499f8abc6728e2743799aa"
+libc = "glibc"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "619ccee914fe8dda9c9fe708eec1ce2b7b0b38e281dafecdd2bef60be837e0d7"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.x86_64-linux-gnu.tar.gz"
+[[Metatensor]]
+arch = "x86_64"
+git-tree-sha1 = "8038f2b232cec7e8e311e5dac4422e4ad8a425d5"
+libc = "musl"
+os = "linux"
+
+    [[Metatensor.download]]
+    sha256 = "76b05ef9ee2d568648d484c5fb5e33880646e487217ddd018e255049f644e6e2"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.x86_64-linux-musl.tar.gz"
+[[Metatensor]]
+arch = "x86_64"
+git-tree-sha1 = "0ac7aa0268fc62a4fe98f23cf8a9cc4a4a81b965"
+os = "freebsd"
+
+    [[Metatensor.download]]
+    sha256 = "c344b69cef60a0b11403a6dde0335d7575a0090d4a0abddc9925378b657bcdd6"
+    url = "https://github.com/luthaf/Metatensor_jll.jl/releases/download/Metatensor-v0.1.0+0/Metatensor.v0.1.0.x86_64-unknown-freebsd.tar.gz"
