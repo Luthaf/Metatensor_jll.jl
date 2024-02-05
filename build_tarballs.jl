@@ -3,7 +3,7 @@
 using BinaryBuilder, Pkg
 
 name = "Metatensor"
-version = v"0.1.0"
+version = v"0.1.2"
 
 
 # Collection of sources required to complete build
@@ -11,7 +11,7 @@ github_release = "https://github.com/lab-cosmo/metatensor/releases/download"
 sources = [
     ArchiveSource(
         "$github_release/metatensor-core-v$version/metatensor-core-cxx-$version.tar.gz",
-        "21fbc2f6b5b89fe57209ad5cd125aed674dcfab984a27e7afe0b12108997a93a"
+        "d793a5f0c96ed79ba3fa944eb99cf72cbed2b76b7f90045db5855c219ecea843"
     ),
 ]
 
@@ -40,9 +40,8 @@ make install
 # platforms are passed in on the command line
 platforms = []
 for platform in supported_platforms()
-    if Sys.iswindows(platform) # && platform.tags["arch"] == "i686"
-        # Rust builds the code in `metatensor.dll` but CMake tries to find it
-        # at `libmetatensor.dll`
+    if Sys.iswindows(platform) && platform.tags["arch"] == "i686"
+        # The code fails to link on 32-bit windows
         continue
     end
     push!(platforms, platform)
@@ -50,7 +49,7 @@ end
 
 # The products that we will ensure are always built
 products = [
-    LibraryProduct("libmetatensor", :libmetatensor)
+    LibraryProduct(["libmetatensor", "metatensor"], :libmetatensor)
 ]
 
 # Dependencies that must be installed before this package can be built
