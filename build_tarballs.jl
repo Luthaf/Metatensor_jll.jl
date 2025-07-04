@@ -3,7 +3,7 @@
 using BinaryBuilder, Pkg
 
 name = "Metatensor"
-version = v"0.1.2"
+version = v"0.1.14"
 
 
 # Collection of sources required to complete build
@@ -11,10 +11,9 @@ github_release = "https://github.com/lab-cosmo/metatensor/releases/download"
 sources = [
     ArchiveSource(
         "$github_release/metatensor-core-v$version/metatensor-core-cxx-$version.tar.gz",
-        "d793a5f0c96ed79ba3fa944eb99cf72cbed2b76b7f90045db5855c219ecea843"
+        "dc6cdd9cf0113e2f012ecf68b81cc7cfc71bef3d2020b41574de8fa403dba646"
     ),
 ]
-
 # Bash recipe for building across all platforms
 script = raw"""
 cd ${WORKSPACE}/srcdir/metatensor-core-*/
@@ -44,6 +43,17 @@ for platform in supported_platforms()
         # The code fails to link on 32-bit windows
         continue
     end
+
+    if Sys.isfreebsd(platform) && platform.tags["arch"] == "aarch64"
+        # Rust toolchain is not available on aarch64-unknown-freebsd
+        continue
+    end
+
+    if platform.tags["arch"] == "riscv64"
+        # Rust toolchain is not available on riscv64
+        continue
+    end
+
     push!(platforms, platform)
 end
 
@@ -56,4 +66,8 @@ products = [
 dependencies = Dependency[]
 
 # Build the tarballs, and possibly a `build.jl` as well.
-build_tarballs(ARGS, name, version, sources, script, platforms, products, dependencies; julia_compat="1.6", compilers=[:c, :rust])
+build_tarballs(
+    ARGS, name, version, sources, script, platforms, products, dependencies;
+    julia_compat="1.6",
+    compilers=[:c, :rust],
+)
