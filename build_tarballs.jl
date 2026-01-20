@@ -3,7 +3,7 @@
 using BinaryBuilder, Pkg
 
 name = "Metatensor"
-version = v"0.1.14"
+version = v"0.1.17"
 
 
 # Collection of sources required to complete build
@@ -11,7 +11,7 @@ github_release = "https://github.com/lab-cosmo/metatensor/releases/download"
 sources = [
     ArchiveSource(
         "$github_release/metatensor-core-v$version/metatensor-core-cxx-$version.tar.gz",
-        "dc6cdd9cf0113e2f012ecf68b81cc7cfc71bef3d2020b41574de8fa403dba646"
+        "42119e11908239915ccc187d7ca65449b461f1d4b5af4d6df1fb613d687da76a"
     ),
 ]
 # Bash recipe for building across all platforms
